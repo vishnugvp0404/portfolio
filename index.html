@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vishnupriya Godaba — Portfolio</title>
+  <meta name="description" content="Portfolio of Vishnupriya Godaba — Computer Science undergraduate and web developer." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="#home">Vishnupriya Godaba</a>
+      <button id="navToggle" class="nav-toggle" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+      <nav id="siteNav" class="site-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="C:\Users\Vishnu\Desktop\Portfolio\Vishnupriya_Godaba_Resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+        <div class="nav-meta">
+          <button id="themeToggle" class="btn btn-ghost" aria-pressed="false">dark</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-column">
+
+    <section class="hero card" id="home">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1>Hello! I’m Vishnupriya</h1>
+          <p class="lead">Computer Science undergraduate specializing in high-performance, full-stack development. I build robust back-ends using Java/Spring and create accessible front-ends with React/JavaScript, focusing on clean architecture and optimal user experience.</p>
+          <p class="typed muted">I build <span id="typed"></span><span class="cursor" aria-hidden="true">|</span></p>
+          <div class="hero-ctas">
+            <a class="btn" href="#projects">See projects</a>
+            <a class="btn btn-ghost" href="#contact">Contact me</a>
+          </div>
+        </div>
+        <div class="hero-photo" aria-hidden="true">VG</div>
+      </div>
+    </section>
+
+    <section class="card about" id="about">
+      <h2>About</h2>
+      <p>Hello! I’m Vishnupriya, a Computer Science undergraduate with strong foundations in Data Structures, Algorithms, and full-stack development. I enjoy building practical tools, contributing to research-oriented projects, and learning new technologies.</p>
+      <p>I have experience in Flutter apps, React-based web apps, and small AI/ML projects. I’m passionate about building <strong>accessible and high-performance web applications</strong>, exploring <strong>cutting-edge technologies</strong>, and <strong>contributing to open-source projects</strong>.</p>
+      <p class="muted">📧 vishnugvp0404@gmail.com | 📞 +91-7093502672 | 📍 Vizianagaram</p>
+      <p class="muted small-links">
+        <a href="#">GitHub</a> · <a href="#">LinkedIn</a> · <a href="#">LeetCode</a>
+      </p>
+    </section>
+
+    <section class="card projects" id="projects">
+      <h2>Projects</h2>
+      <p class="muted">Selected work — click to view details.</p>
+      <div class="projects-grid">
+        <article class="project" data-title="Point Marking & Prediction" data-desc="Flutter app + ResNet model + Flask API for dataset preparation and predictions." data-links='[{"label":"Paper","url":"#"},{"label":"Code","url":"#"}]' tabindex="0">
+          <div class="project-image">PM</div>
+          <div class="project-body">
+            <h3>Point Marking Tool</h3>
+            <p class="muted">Flutter · Flask · ResNet</p>
+          </div>
+        </article>
+
+        <article class="project" data-title="Expense Tracker" data-desc="Full-stack MERN app for tracking and visualizing expenses." data-links='[{"label":"Live","url":"#"},{"label":"Code","url":"#"}]' tabindex="0">
+          <div class="project-image">ET</div>
+          <div class="project-body">
+            <h3>Expense Tracker</h3>
+            <p class="muted">MongoDB · Express · React · Node</p>
+          </div>
+        </article>
+
+        <article class="project" data-title="Netflix Clone" data-desc="Responsive React-based UI showcasing media grids and dynamic banners." data-links='[{"label":"Demo","url":"#"},{"label":"Code","url":"#"}]' tabindex="0">
+          <div class="project-image">NC</div>
+          <div class="project-body">
+            <h3>Netflix Clone</h3>
+            <p class="muted">React · CSS Grid</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="card skills" id="skills">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li>HTML & CSS <div class="skill-bar" data-level="90"><div class="skill-fill"></div></div></li>
+        <li>JavaScript (ES6+) <div class="skill-bar" data-level="85"><div class="skill-fill"></div></div></li>
+        <li>React.js<div class="skill-bar" data-level="80"><div class="skill-fill"></div></div></li>
+        <li>Node.js & Express <div class="skill-bar" data-level="75"><div class="skill-fill"></div></div></li>
+        <li>Python & ML basics <div class="skill-bar" data-level="70"><div class="skill-fill"></div></div></li>
+        <li>Java <div class="skill-bar" data-level="80"><div class="skill-fill"></div></div></li>
+      </ul>
+
+      <div class="section-title"><h3>Education</h3></div>
+      <div>
+        <strong>B.Tech — Computer Science & Engineering</strong><br />
+        Anil Neerukonda Institute of Technology and Sciences — CGPA: 9.73
+      </div>
+    </section>
+
+    <section class="card contact" id="contact">
+      <h2>Contact</h2>
+      <p>If you'd like to work together or ask about a project, send a message below.</p>
+      <form id="contactForm" class="contact-form" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <div class="form-actions">
+          <button class="btn" type="submit">Send message</button>
+          <button class="btn btn-ghost" type="reset">Reset</button>
+        </div>
+        <p id="formStatus" class="muted" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Vishnupriya Godaba </p>
+    </div>
+  </footer>
+
+  <div id="projectModal" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button id="modalClose" class="modal-close" aria-label="Close">×</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <div id="modalLinks" class="modal-links"></div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
